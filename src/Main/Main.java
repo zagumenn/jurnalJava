@@ -4,6 +4,7 @@ import java.sql.SQLException;
 import java.util.Scanner;
 
 import static Main.Controller.DisciplineController.*;
+import static Main.Controller.MessegesController.getAllMesseges;
 import static Main.Controller.RoleController.getAllRoles;
 import static Main.Controller.RoleController.*;
 import static Main.Controller.UsersControler.*;
@@ -26,8 +27,8 @@ public class Main {
         //ввод Дисциплины
         //addDiscipline();
         //updateDiscipline();
-        deleteDisciplines();
+        //deleteDisciplines();
         //getOneDiscipline();
-
+        getAllMesseges();
     }
 }

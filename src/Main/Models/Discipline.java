@@ -108,7 +108,7 @@ public class Discipline {
         return discipline;
     }
     //метод подключения к БД и отправки запроса
-    private static void  statement(String query) throws SQLException, ClassNotFoundException {
+    static void  statement(String query) throws SQLException, ClassNotFoundException {
         Statement statement = getDbConnect().createStatement();
         statement.executeUpdate(query);
     }
