@@ -15,10 +15,37 @@
     <connection id="92a86f5e-c95a-499a-b707-8014ed794c1e">
       <console name="Connection" type="STANDARD" schema="rybin1_jurYPAT" session="Main"><![CDATA[insert into `Roles` (name) values ('manager')
 select * from `Roles`;]]></console>
+      <console name="Connection-YPAT" type="STANDARD" schema="rybin1_jurYPAT" session="Main"><![CDATA[select  * from  `Disciplines`
+
+INSERT INTO `Disciplines` (name) values ('Какая-то дисциплина') //добавить
+
+UPDATE `Disciplines` SET name = 'Какая-то дисциплина' WHERE id = 'нужный id' //обновить
+
+DELETE FROM `Disciplines` WHERE id = 'нужный id' //удалить
+
+SELECT * FROM `Disciplines` WHERE id = 'нужный id' //вывести одну запись]]></console>
+      <console name="deleteUser" type="STANDARD" schema="rybin1_jurYPAT" session="Main" />
       <console name="updateRole" type="STANDARD" schema="rybin1_jurYPAT" session="Main"><![CDATA[UPDATE `Roles` SET name = 'OOO-MAN' WHERE id = 60]]></console>
-      <console name="Добавить запись" type="STANDARD" schema="rybin1_jurYPAT" session="Main"><![CDATA[INSERT INTO Roles (name) values ('SyperStudent')
+      <console name="updateUser" type="STANDARD" schema="rybin1_jurYPAT" session="Main"><![CDATA[UPDATE Users SET name = 'OOO-MAN' WHERE id = 11;
+UPDATE Users SET role_id = 103 WHERE id = 20;
+UPDATE Users SET login = 'Новый логин' WHERE id = 29;
+UPDATE Users SET password = 'Новый пароль' WHERE id = 28;
+
+UPDATE `Users`
+SET name = VALUES ('OOO-MAN'),
+    role_id = 1,
+    name = VALUES ('Новый Логин'),
+    name = VALUES ('Новый пароль')
+WHERE id = 20;]]></console>
+      <console name="Вывод всех записей в Users" type="STANDARD" schema="rybin1_jurYPAT" session="Main"><![CDATA[SELECT COUNT(*) AS count FROM `Users`;
+SELECT id, name, login, password,
+    (SELECT name FROM `Roles` WHERE id = role_id) AS role
+FROM Users;]]></console>
+      <console name="Добавить запись" type="STANDARD" schema="rybin1_jurYPAT" session="Main"><![CDATA[INSERT INTO `Disciplines` (name) values ('Математическая физика')
 select * from Roles;]]></console>
-      <console name="Удаление роли" type="STANDARD" schema="rybin1_jurYPAT" session="Main"><![CDATA[DELETE]]></console>
+      <console name="Создание пользователя" type="STANDARD" schema="rybin1_jurYPAT" session="Main"><![CDATA[INSERT INTO `Users` (role_id, name, login, password) 
+VALUES (1, 'NewUSER','new-us','111111')]]></console>
+      <console name="Удаление роли" type="STANDARD" schema="rybin1_jurYPAT" session="Main" />
     </connection>
   </component>
   <component name="DBNavigator.Project.DatabaseEditorStateManager">
