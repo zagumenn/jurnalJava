@@ -24,6 +24,11 @@ UPDATE `Disciplines` SET name = 'Какая-то дисциплина' WHERE id 
 DELETE FROM `Disciplines` WHERE id = 'нужный id' //удалить
 
 SELECT * FROM `Disciplines` WHERE id = 'нужный id' //вывести одну запись]]></console>
+      <console name="Connection-YPAT1" type="STANDARD" schema="rybin1_jurYPAT" session="Main"><![CDATA[update  `Messages` SET `text` = 'Новый текст' where id = 54363
+
+DELETE FROM `Messages` WHERE id = 54364
+
+SELECT name FROM `Users` WHERE id = user_id) as userId, title, text, pathFile, dateOfCreation FROM `Messages`]]></console>
       <console name="deleteUser" type="STANDARD" schema="rybin1_jurYPAT" session="Main" />
       <console name="updateRole" type="STANDARD" schema="rybin1_jurYPAT" session="Main"><![CDATA[UPDATE `Roles` SET name = 'OOO-MAN' WHERE id = 60]]></console>
       <console name="updateUser" type="STANDARD" schema="rybin1_jurYPAT" session="Main"><![CDATA[UPDATE Users SET name = 'OOO-MAN' WHERE id = 11;

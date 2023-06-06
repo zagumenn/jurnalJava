@@ -63,8 +63,8 @@ public class Discipline {
 
     }
        //добавить
-        public void add(String nameDisc) throws SQLException, ClassNotFoundException {
-            String query =  "INSERT INTO " + TABLE_DISC + " ("+ TABLE_DISC_NAME + ") VALUES ('"+ nameDisc +"')";
+        public void add(String nameMesseges) throws SQLException, ClassNotFoundException {
+            String query =  "INSERT INTO " + TABLE_DISC + " ("+ TABLE_DISC_NAME + ") VALUES ('"+ nameMesseges +"')";
 
             Statement statement = getDbConnect().createStatement();
 

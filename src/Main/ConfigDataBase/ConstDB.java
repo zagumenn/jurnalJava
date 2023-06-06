@@ -16,12 +16,15 @@ public static final String TABLE_DISC = "Disciplines";
 public static final String TABLE_DISC_ID = "id";
 public static final String TABLE_DISC_NAME = "name";
 
-public static final String TABLE_MESSEGES = "Messeges";
-public static final String TABLE_MESSEGES_ID = "Messeges";
-public static final String TABLE_MESSEGES_USER_ID = "Messeges";
-public static final String TABLE_MESSEGES_TITLE = "Messeges";
-public static final String TABLE_MESSEGES_TEXT = "Messeges";
-public static final String TABLE_MESSEGES_PATH_FILE = "Messeges";
-public static final String TABLE_MESSEGES_DATE_OF_CREATION = "Messeges";
+public static final String TABLE_MESSEGES = "Messages";
+public static final String TABLE_MESSEGES_ID = "id";
+public static final String TABLE_MESSEGES_USER_ID = "user_id";
+
+public static final String TABLE_MESSEGES_USER_RECIPIENT_ID  = "user_recipient_id";
+
+public static final String TABLE_MESSEGES_TITLE = "title";
+public static final String TABLE_MESSEGES_TEXT = "text";
+public static final String TABLE_MESSEGES_PATH_FILE = "pathFile";
+public static final String TABLE_MESSEGES_DATE_OF_CREATION = "dateOfCreation";
 
 }

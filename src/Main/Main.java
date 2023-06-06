@@ -1,13 +1,9 @@
 package Main;
+
 import java.lang.reflect.InvocationTargetException;
 import java.sql.SQLException;
-import java.util.Scanner;
+import static Main.Controller.MessagesController.getAllMessages;
 
-import static Main.Controller.DisciplineController.*;
-import static Main.Controller.MessegesController.getAllMesseges;
-import static Main.Controller.RoleController.getAllRoles;
-import static Main.Controller.RoleController.*;
-import static Main.Controller.UsersControler.*;
 
 public class Main {
 
@@ -29,6 +25,9 @@ public class Main {
         //updateDiscipline();
         //deleteDisciplines();
         //getOneDiscipline();
-        getAllMesseges();
+        //getAllMessegas();
+        getAllMessages();
+
     }
+
 }
